@@ -19,7 +19,7 @@
 <br><br>
 📢 Common
 <br><br>
-<img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=GitHub&logoColor=white"/></a>
+<img src="https://img.shields.io/badge/Eclipse-2C2255?style=flat-square&logo=Eclipse IDE&logoColor=white"/></a>
 <img src="https://img.shields.io/badge/Windows 10-265A8F?style=flat-square"/></a>
 <br>
 <img src="https://img.shields.io/badge/Google Chrome-4285F4?style=flat-square&logo=Google Chrome&logoColor=white"/></a>
@@ -29,7 +29,6 @@
 <br><br>
 <img src="https://img.shields.io/badge/Java-181717?style=flat-square"/></a>
 <img src="https://img.shields.io/badge/JSP-E34F26?style=flat-square"/></a>
-<br>
 <img src="https://img.shields.io/badge/Oracle SQL-F80000?style=flat-square&logo=Oracle&logoColor=white"/></a>
 <br><br>
 
