@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+p {
+	font-size: 12px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.lead {
+	font-size: 16px;
+}
+
+#title, #price {
+	font-size: 30px;
+	font-weight: bold;
+}
+
+#btBuy, #btReply {
+	background-color: #FD8A69;
+	border-color: #FD8A69;
+}
+
+#regdate {
+	color: gray;
+	font-size: 20px;
+}
+
+.nick {
+	font-size: 1.2em;
+	width: 15%;
+}
+
+.buttons {
+	width: 15%
+}
+
+#btEdit {
+	background-color: blue;
+	border-color: blue;
+}
+
+#btDel {
+	background-color: red;
+	border-color: red;
+}
+
+.nav-link, .nav-link:hover {
+	color: #a6a6a6;
+}
+
+.detail {
+	margin: 20px 20px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+   
+    font-weight: bold;
+}
+
+.buttons {
+	text-align: center;
+}
+
+.reg, .title {
+	width: 80%;
+	margin: 0 10%;
+}
+
+.title {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.red {
+	font-size: 16px;
+	color: red;
+}
+
+.blue {
+	font-size: 14px;
+	color: rgb(0, 153, 255);
+}
+#btnreg{
+	background-color: #FD8A69;
+	border-color: #FD8A69;
+
+}

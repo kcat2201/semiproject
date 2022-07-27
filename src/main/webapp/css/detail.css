@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+p {
+	font-size: 12px;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.lead {
+	font-size: 16px;
+}
+
+#title, #price {
+	font-size: 30px;
+	
+}
+
+#btReply {
+	background-color: #FD8A69;
+	border-color: #FD8A69;
+	font-size: 14px;	
+	font-family: Roboto;
+	float: right;
+}
+
+#regdate {
+	color: gray;
+	font-size: 20px;
+}
+
+.nick {
+	font-size: 1.2em;
+	width: 15%;
+}
+
+.buttons {
+	width: 15%
+}
+
+.detailPage #btEdit{
+	background-color: blue;
+	border-color: blue;
+	font-size: 20px;	
+	font-family: Roboto;
+}
+
+.detailPage #btDel{
+	background-color: red;
+	border-color: red;
+	font-size: 20px;	
+	font-family: Roboto;
+}
+
+.nav-link, .nav-link:hover {
+	color: #a6a6a6;
+	font-size:16px;
+}
+
+.detail {
+	margin: 20px 20px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+   
+    font-weight: bold;
+}
+.detailPage{
+	padding-bottom:285px;
+}
+
+#btFlag{
+font-size: 20px;	
+font-family: Roboto;
+}
+
+a.delete{
+	font-size: 12px;
+	padding:1px 5px;	border : 1px solid blue;
+}
+.detailPage th.nick {font-size: 16px;}
+#title, #price, #regdate{
+	color:black;
+}

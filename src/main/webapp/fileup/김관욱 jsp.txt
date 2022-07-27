@@ -1,0 +1,112 @@
+
+jsp - 웹 프로그래밍 언어, 서버에서 실행되는 스크립트 언어
+
+디렉티브(Directive) : 지시어
+스크립트: <% %>스크립트릿(Scriptlet), <%= %>표현식, <!% %>선언부
+response : 응답
+request : 요청
+
+WAS - 자바 ee 기술사양을 준수하여 만든 서버
+
+웹 컨테이너(jsp와 서블릿을 실행시켜 주는 컨테이너) - 웹 관련 부분만 구현한 서버
+
+웹 어플리케이션, context, 웹 프로젝트, 웹 사이트
+
+http://localhost:9090/testsite/now1.jsp
+ '/testsite'=>웹어플리케이션의 콘텍스트 경로(context path)
+
+http://192.168.0.93:9090/testsite/now1.jsp
+1) ip 주소에 해당하는 컴퓨터를 찾는다
+2) port를 사용하는 프로그램 톰캣을 찾음
+3) 기본디렉토리 webapps 에서 testsite 폴더 찾음
+4) 이후 jsp 파일찾고 서버에서 실행
+5) 결과는 html 형식으로 클라이언트에 내려보낸다. 브라우저가 실행해서 보여준다
+
+server.xml
+<Context path="/samplesite" docBase="C:\lecture\jsp\samplesite"></Context>
+톰캣 설치 폴더가 아닌 다른 위치에 웹 어플리케이션을
+만들고자 할 때 사용됨
+
+<%@ page contentType="text/html;charset=euc-kr" %>
+<응답문서에 대한 인코딩>
+<%@ page import="java.util.*"%>
+<!-- page 지시자(디렉티브) - page에 대한 정보 설정
+
+<%@include file="copyright.jsp"%>
+<!-- include 지시자 : 특정 문서를 포함시킬 때 사용
+페이지의 소스를 포함시킴
+같은 이름의 변수가 있으면안됨
+
+<!--include 액션 태그
+	소스가 아닌 페이지의 실행결과를 포함시킴
+	-->
+
+<%	//jsp는 서버에서 먼저 실행된다. 서블릿으로 변환된다
+	//스크립트릿 - jsp코드 사용, 여기에 선언된 변수는 모두 지역변수임
+	//스크립트릿에 작성한 코드는 서블릿으로 변환되면 서비스 메서드 안에 들어간다
+
+단순한 이동 (get)
+url enter - 사용자가 링크를 클릭
+html = a태그
+js = location.href=
+jsp = response.sendRedirect
+
+GET 요청의 데이터 전달 형식
+url주소?파라미터명1=값1&파라미터명2=값2
+http://abc.com:9090/test/now1.jsp?name=홍길동&age=20
+
+(post)요청 파라미터에 대한 인코딩
+request.setCharacterEncoding("euc-kr");
+
+입력 받아서 보내야함 (post)
+form에 정보 입력 후 submit 버튼 클릭
+
+HTTP 프로토콜
+stateless, connectless
+
+
+	<!--GET방식으로 데이터 전송
+	사용자가 입력한 데이터는 action에 지정된 GetServlet이라는
+	서블릿 페이지로 전달됨-->
+	
+	<!-- http://localhost:9090/mystudy2/GetServ?id=hong&pwd=12
+	/mystudy2/GetServ?id=hong&pwd=12
+	서블릿은 절대참조를 써야함 /로 시작, URI부분
+	-->
+		서블릿 필수 두가지
+		// 응답문서에 대한 ContentType 지정
+		response.setContentType("text/html;charset=euc-kr");
+		
+		// 출력 스트림 얻어오기
+		PrintWriter out=response.getWriter();
+
+//업로드할 폴더의 절대경로 구하기
+      String saveDir=application.getRealPath(upDir);
+      System.out.println("saveDir="+saveDir);
+      
+      saveDir=config.getServletContext().getRealPath(upDir);
+      System.out.println("saveDir="+saveDir);
+
+페이지컨텍스트 리퀘스트 세션 어플리케이션
+작은순서대로 정렬
+
+//[1] 쿠키 객체 생성
+   Cookie ck = new Cookie("id", "hong"); //이름, 값(name, value) 쌍으로 넣는다
+
+   //[2] 유효기간 설정
+   ck.setMaxAge(2 * 60); //초단위로 입력 => 120초 동안 쿠키가 유지됨
+   ck.setPath("/");
+   //[3] 쿠키 추가
+   response.addCookie(ck);
+
+include 액션태그 foward액션태그 사용하면 내장객체 공유하여 같은 리퀘스트 영역
+
+  include 지시자 : 페이지의 소스를 그대로 가져온다. 같은 이름의 변수가 있으면안됨
+   include 액션태그 : 소스가아닌 실행결과를 가져온다
+
+find는 자식을 찾는다 후손
+
+콘텍스트 패스 절대 참조시 자동 생성 3가지 경우
+1.web.xml
+2.include 액션태그 사용시
+3.모든 forword

@@ -1,0 +1,31 @@
+@charset "UTF-8";
+.save{
+/* style="background-color: #FD8A69" */
+	background-color: #FD8A69;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+}
+
+.list{
+/* style="background-color: #FD8A69" */
+	background-color: #FD8A69;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	
+}
+.del{
+	background-color: #FD8A69;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	
+}
+.edit{
+	background-color: #FD8A69;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+	
+}

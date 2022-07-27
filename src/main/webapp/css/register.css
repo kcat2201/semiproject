@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+
+.reg, .title, .pdEditPage {
+	width: 80%;
+	margin: 0 10%;
+}
+
+.title, .pdEditPage {
+	padding-top: 20px;
+	font-size: 14px;
+	padding-bottom:285px;
+}
+
+
+.red {
+	font-size: 16px;
+	color: red;
+}
+
+.blue {
+	font-size: 14px;
+	color: rgb(0, 153, 255);
+}
+#btnreg, #btnedit{
+	background-color: #FD8A69;
+	border-color: #FD8A69;
+	font-family: Roboto;
+	font-size: 16px;
+	margin-left: 10px;
+}
+#btncan, #btncancel{
+	font-family: Roboto;
+	font-size: 16px;
+}
+.form-control, .form-select{
+	font-size: 14px;
+}
+.form-control#price{
+	font-size:14px;
+	font-weight: normal;
+}
+.buttons {
+	margin:0 auto;
+	font-size: 16px;
+	text-align: center;
+}
+li.list-group-item {text-align: right;}

@@ -1,0 +1,148 @@
+@charset "UTF-8";
+
+div#sangpoom {
+	width: 1024px;
+	height: 1654.14px;
+	padding-bottom: 358.391px;
+}
+
+div .card {
+	width: 241px;
+	height: 284px;
+	margin: 5.5px;
+	float: left;
+}
+
+.card-img-top {
+	width: 239px;
+	height: 150px;
+	object-fit: cover;
+}
+
+small.text-muted {
+	float: right;
+}
+
+#sangpoom {
+	align-items: center;
+	width: 100%;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-bottom: 35%;
+}
+
+p.card-text {
+	color: #4D5159;
+	font-size: 16px;
+	font-style: normal;
+	font-family: Roboto;
+}
+
+p.card-price{
+	color: #4D5159;
+	font-size: 16px;
+	font-style: normal;
+	font-family: Roboto;
+}
+
+p.card-title a{
+	color: #4D5159;
+	font-size: 16px;
+	font-style: normal;
+	font-family: Roboto;
+	font-weight: bold;
+}
+
+a {
+	text-decoration: none;
+}
+
+.pagination {
+	margin-top: 100px;
+	display: flex;
+	padding-left: 0;
+	list-style: none;
+}
+
+a.page-link {
+	color: #4D5159;
+	font-size: 16px;
+	font-style: normal;
+	font-family: Roboto;
+}
+
+#section3 {
+	padding-top: 30px;
+	width: 1009px;
+	height: 1150px;
+}
+
+div .card-body {
+	width: 239px;
+	height: 132px;
+	padding: 10px;
+}
+
+div #search-wrap {
+	padding-left: 380px;
+}
+
+.btn-outline-success {
+	height: 40px;
+	border: 1px solid #D1D3D8;
+	box-sizing: border-box;
+	border-radius: 6px;
+	color: #fd8a69;
+	font-size: 16px;
+	font-weight: bold;
+	width: 70px;
+	font-family: Roboto;
+}
+
+input#keyword {
+	border-radius: 6px;
+	border: 1px solid #D1D3D8;
+	font-size: 16px;
+	font-family: Roboto;
+}
+
+.btn-outline-success:hover{
+	background-color: #fd8a69;
+	border-color: #fd8a69;
+}
+
+/* 해당 상품 없을시 */
+div .noResultPage{
+	text-align: center;
+}
+
+div .noResultPage p{
+	font-size: 35px;
+    font-family: Roboto;
+    font-weight: bold;
+    color: #4D5159;
+}
+
+/* 기본 css */
+html {
+	min-width: 980px;
+	height: 100%;
+	font-size: 62.5%
+}
+
+body {
+	position: relative;
+	color: #212529;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+		"Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+		"Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-weight: 400;
+	min-height: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	height: 1295.749px;
+}
+
+footer{
+	top: 1900px;
+}

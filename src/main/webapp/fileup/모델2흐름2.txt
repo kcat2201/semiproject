@@ -1,0 +1,69 @@
+모델2 흐름
+
+# pd
+[1]상품등록 화면 보기pdWrite.jsp화면보기
+/pd/pdWrite.do => DispatcherServlet => PdWriteController => pdWrite.jsp
+컨트롤러와 jsp가 짝궁이라 forward
+
+[2]상품등록 처리(기존 pdWrite_ok.jsp)
+메세지 없이 페이지이동
+/pd/pdWritd_ok.do=>DispatcherServlet => PdWriteOkController
+=> pdList.do로 redirect
+
+[3]상품 목록 페이지 보기=> pdList.jsp 페이지 보기
+/pd/pdList.do => DispatcherServlet => PdListController
+=> pdList.jsp 로 forward!!
+
+[4]상세보기 페이지 보기 => pdDetail.jsp페이지 보기
+/pd/pdDetail.do =>DispatcherServlet => PdDetailController
+=>pdDetail.jsp로 forward!!
+
+[5]수정화면 페이지 보기=> pdEdit.jsp페이지보기
+/pd/pdEdit.do =>DispatcherServlet => PdEditController
+=>pdEdit.jsp로 forward!!
+
+[6] 수정처리 (기존 pdEdit_ok.jsp)
+메시지 띄우기
+
+/pd/pdEdit_ok.do =>DispatcherServlet => PdEditOkController
+=>message.jsp로 forward
+
+[7] 삭제 처리 
+메시지 없이
+/pd/pdDelete.do=>DispatcherServlet => PdDeleteController
+=> PdList.do로 redirect
+
+
+# board
+[1] 글쓰기 화면 보기 => write.jsp 화면보기
+/board/write.do=>DispatcherServlet => WriteController
+=>write.jsp로 forward
+
+[2] 글쓰기 처리 (기존write_ok.jsp)
+메세지 없이
+
+/board/write_ok.do =>DispatcherServlet => WriteOkController
+=>list.do 로 redirect
+
+[3] 글목록 페이지 보기 => list.jsp페이지 보기
+
+/board/list.do=>DispatcherServlet => ListController
+=>list.jsp 로 forward
+
+
+#book
+[1]글쓰기 화면 보기 
+/book/bookWrite.do > DispatcherServlet > BookWriteController
+>bookWrite.jsp 로 forward
+
+[2]글쓰기 처리 (기존 bookWrite_ok.jsp)
+/book/bookWrite_ok.do > DispatcherServlet > BookWriteOkController 
+> list.do 로 redirect
+
+[3]글목록 페이지 보기 => bookList.jsp페이지
+/book/bookList.do > DispatcherServlet > BookListController 
+> bookList.jsp 로 forward
+
+[4]상세보기 페이지 보기 => BookDetail.jsp페이지 보기
+/book/bookDetail.do =>DispatcherServlet => BookDetailController
+=>bookDetail.jsp로 forward!!

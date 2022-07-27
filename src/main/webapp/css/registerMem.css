@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+body.membership {
+	font-size: 13px;
+	font-family: '-apple-system', 'Noto Sans KR', sans-serif;
+	height: 100%;
+    margin-top: 250px;
+}
+
+.membership__wrap {
+	width: 400px;
+	margin: 0 auto;
+}
+
+header .membership__top-logo {
+	background-image: url("../img/top_logo.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 80%;
+	height: 110px;
+}
+
+.membership__sec {
+	width: 80%;
+	padding: 15px;
+	padding-left: 0px;
+	margin: 0 auto;
+	line-height: 2;
+}
+
+.membership-input {
+	overflow: hidden;
+	margin-bottom: 0px;
+	margin-bottom: 10px;
+}
+
+#membership-input__agree{
+	float: right;
+	margin-bottom: 40px;
+	font-size: 0.9em;
+}
+
+.membership-input__label {
+	clear: both;
+	font-weight: bold;
+}
+
+.membership-input__wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+
+strong.notice {
+	color: #FA1A05;
+	letter-spacing: 1px;
+	font-size: 4px;
+	margin-left: 5px;
+}
+
+.membership-input__input{
+	width: 78%;
+	height: 28px;
+	border: 1px solid #E3E3E3;
+}
+
+#editmId{
+	background-color:#dfdfdf;
+} 
+
+#mPwdHint.membership-input__input{
+	width: 80%;
+	height: 32px;
+} 
+
+.membership-input__btn {
+	background-color: #FD8A69;
+	color: white;
+}
+
+.membership-input__wrap .membership-input__btn{
+	font-size: 4px;
+	border: hidden;
+	border-radius: 5px;
+}
+
+.login-button {
+	width: 80%;
+	height: 28px;
+	background-color: #FD8A69;
+	color: white;
+	border: hidden;
+}
+
+.membership-input__submit {
+	clear: both;
+	height: 28px;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#btnJoin, #btnCancle {
+	border: hidden;
+	border-radius: 5px;
+}
+
+#cancleBtn {
+	background-color: gray;
+	color: white;
+}
+
+ul.login-member__util{
+	overflow:hidden;
+}
+
+login-member__util__list{
+	display: flex;
+	justify-content: space-between;
+}
+.login-member__util__item{
+	float:left;
+	list-style-type: none;
+}
+
+ul.login-member__util__list li:first-child::after{
+	content: "|";
+}
+ul.login-member__util__list li:last-child::before{
+	content: "|";
+}
+
+a{
+	text-decoration: none;
+	font-size:0.8em;
+}
+
+.login-bottom-text__text{
+	clear: both;
+}

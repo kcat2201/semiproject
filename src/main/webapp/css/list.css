@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+#container {
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 10%;
+}
+
+#list {
+	text-align: center;
+}
+#write{
+	text-align: right;
+}
+.write {
+
+	background-color: #FD8A69;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+}
+.edit {
+
+	background-color: #FD8A69;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+}
+.del {
+
+	background-color: #FD8A69;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+}
+
+.table>thead {
+	background-color: #FD8A69;
+}
+/* #b3c6ff */
+.table>thead>tr>th {
+	text-align: center;
+}
+
+.table-hover>tbody>tr:hover {
+	background-color: #FFEFD5;
+} /* #e6ecff */
+.table>tbody>tr>td {
+	text-align: center;
+}
+
+.table>tbody>tr>#title {
+	text-align: left;
+}
+
+div>#paging {
+	text-align: center;
+}
+
+.hit {
+	animation-name: blink;
+	animation-duration: 1.5s;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+}
+.divSearch{
+		text-align:center;		
+		padding:5px 0 2px 0;
+	}
+.search{
+/* style="background-color: #FD8A69" */
+	background-color: #FD8A69;
+	border-radius: 5px;
+	border: 1px solid white;
+	color: white;
+}
